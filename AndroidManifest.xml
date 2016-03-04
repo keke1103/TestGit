@@ -24,6 +24,8 @@
         </activity>
         <activity android:name="com.keke.testgit.KekeActivity" >
         </activity>
+        <activity android:name="com.keke.testgit.SetActivity" >
+        </activity>
     </application>
 
 </manifest>
