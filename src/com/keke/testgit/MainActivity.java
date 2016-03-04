@@ -20,6 +20,7 @@ public class MainActivity extends FragmentActivity {
 		b1.setOnClickListener(l);
 		b2.setOnClickListener(l);
 	}
+
 	private OnClickListener l = new OnClickListener() {
 
 		@Override
