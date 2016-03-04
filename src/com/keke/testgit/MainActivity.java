@@ -7,7 +7,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 public class MainActivity extends FragmentActivity {
-
+	View b1;
+	View b2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends FragmentActivity {
 		b1.setOnClickListener(l);
 		b2.setOnClickListener(l);
 	}
+
 	private OnClickListener l = new OnClickListener() {
 
 		@Override
