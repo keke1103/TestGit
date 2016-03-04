@@ -15,6 +15,7 @@ public class SetActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_set);
 		setMain = (Button) findViewById(R.id.button_set_main_activity);
 		setKeke = (Button) findViewById(R.id.button_set_keke);
 		setKeke.setOnClickListener(onClickListener);
@@ -29,7 +30,9 @@ public class SetActivity extends Activity {
 			switch (v.getId()) {
 			case R.id.button_set_main_activity:
 				Intent intent = new Intent(SetActivity.this, MainActivity.class);
+				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
 				startActivity(intent);
+				finish();
 				break;
 			case R.id.button_set_keke:
 				Intent intent2 = new Intent(SetActivity.this, KekeActivity.class);
