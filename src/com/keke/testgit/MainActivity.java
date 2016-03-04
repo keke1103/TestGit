@@ -33,6 +33,8 @@ public class MainActivity extends FragmentActivity {
 				break;
 
 			default:
+				intent = new Intent(getApplicationContext(), SetActivity.class);
+				startActivity(intent);
 				break;
 			}
 
