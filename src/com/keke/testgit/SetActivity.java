@@ -32,7 +32,7 @@ public class SetActivity extends Activity {
 				startActivity(intent);
 				break;
 			case R.id.button_set_keke:
-				Intent intent2 = new Intent(SetActivity.this, MainActivity.class);
+				Intent intent2 = new Intent(SetActivity.this, KekeActivity.class);
 				startActivity(intent2);
 				break;
 			default:

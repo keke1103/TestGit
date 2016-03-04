@@ -17,5 +17,6 @@ public class KekeActivity extends Activity {
 		setContentView(R.layout.activity_keke);
 		mTime = (Chronometer) findViewById(R.id.time);
 		mClock = (AnalogClock) findViewById(R.id.analogClock1);
+		mClock.animate().start();
 	}
 }
