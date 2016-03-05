@@ -29,6 +29,8 @@
         </activity>
         <activity android:name="com.keke.testgit.YuanActivity" >
         </activity>
+        <activity android:name="com.keke.testgit.TestGetActivity" >
+        </activity>
     </application>
 
 </manifest>

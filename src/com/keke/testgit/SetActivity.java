@@ -11,6 +11,7 @@ public class SetActivity extends Activity {
 	Button setMain;
 	Button setKeke;
 	Button setYuan;
+	Button setGet;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,9 @@ public class SetActivity extends Activity {
 		setMain = (Button) findViewById(R.id.button_set_main_activity);
 		setKeke = (Button) findViewById(R.id.button_set_keke);
 		setYuan = (Button) findViewById(R.id.button_set_yuan);
+		setGet = (Button) findViewById(R.id.button_set_test);
+
+		setGet.setOnClickListener(onClickListener);
 		setYuan.setOnClickListener(onClickListener);
 		setKeke.setOnClickListener(onClickListener);
 		setMain.setOnClickListener(onClickListener);
@@ -46,6 +50,13 @@ public class SetActivity extends Activity {
 			case R.id.button_set_yuan:
 				Intent intent1 = new Intent(SetActivity.this, YuanActivity.class);
 				startActivity(intent1);
+				break;
+
+			case R.id.button_set_test:
+				Intent intent3 = new Intent(SetActivity.this, TestGetActivity.class);
+				startActivity(intent3);
+				break;
+
 			default:
 				break;
 			}
