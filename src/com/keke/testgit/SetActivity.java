@@ -10,6 +10,7 @@ import android.widget.Button;
 public class SetActivity extends Activity {
 	Button setMain;
 	Button setKeke;
+	Button setYuan;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,8 @@ public class SetActivity extends Activity {
 		setContentView(R.layout.activity_set);
 		setMain = (Button) findViewById(R.id.button_set_main_activity);
 		setKeke = (Button) findViewById(R.id.button_set_keke);
+		setYuan = (Button) findViewById(R.id.button_set_yuan);
+		setYuan.setOnClickListener(onClickListener);
 		setKeke.setOnClickListener(onClickListener);
 		setMain.setOnClickListener(onClickListener);
 	}
@@ -34,10 +37,15 @@ public class SetActivity extends Activity {
 				startActivity(intent);
 				finish();
 				break;
+
 			case R.id.button_set_keke:
 				Intent intent2 = new Intent(SetActivity.this, KekeActivity.class);
 				startActivity(intent2);
 				break;
+
+			case R.id.button_set_yuan:
+				Intent intent1 = new Intent(SetActivity.this, YuanActivity.class);
+				startActivity(intent1);
 			default:
 				break;
 			}

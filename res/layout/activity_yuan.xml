@@ -5,19 +5,15 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/button_set_main_activity"
+        android:id="@+id/button_yuan_main"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="跳主页" />
 
     <Button
-        android:id="@+id/button_set_keke"
+        android:id="@+id/button_yuan_set"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="跳keke页面" />
-    <Button
-        android:id="@+id/button_set_yuan"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="跳yuan页面" />
+        android:text="跳SET页面" />
+
 </LinearLayout>
