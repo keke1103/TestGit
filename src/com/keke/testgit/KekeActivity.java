@@ -8,12 +8,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AnalogClock;
 import android.widget.Chronometer;
+import android.widget.TextView;
 
 @SuppressWarnings("deprecation")
 public class KekeActivity extends Activity {
 	Chronometer mTime;
 	AnalogClock mClock;
-
+	TextView textView1;
 	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,17 @@ public class KekeActivity extends Activity {
 		mClock.animate().start();
 
 		mClock.setOnClickListener(l);
+		textView1=(TextView) findViewById(R.id.textView1);
+		textView1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				 
+				Intent intent = getIntent();
+				intent.setClass(KekeActivity.this, Keke2Activity.class);
+				startActivity(intent);
+			}
+		});
 	}
 
 	OnClickListener l = new OnClickListener() {
