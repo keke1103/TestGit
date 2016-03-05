@@ -33,6 +33,8 @@
         </activity>
         <activity android:name="com.keke.testgit.Keke3Activity" >
         </activity>
+        <activity android:name="com.keke.testgit.TestGetActivity" >
+        </activity>
     </application>
 
 </manifest>

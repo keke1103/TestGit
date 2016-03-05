@@ -8,30 +8,30 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
-        android:text="SET页面" />
+        android:text="TEXTGET页面" />
 
     <Button
-        android:id="@+id/button_set_main_activity"
+        android:id="@+id/button_test_get_main"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="跳主页" />
 
     <Button
-        android:id="@+id/button_set_keke"
+        android:id="@+id/button_test_get_keke"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="跳keke页面" />
 
     <Button
-        android:id="@+id/button_set_yuan"
+        android:id="@+id/button_test_get_yuan"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="跳yuan页面" />
 
     <Button
-        android:id="@+id/button_set_test"
+        android:id="@+id/button_test_get_set"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="测试get页面" />
+        android:text="跳set页面" />
 
 </LinearLayout>
