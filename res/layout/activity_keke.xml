@@ -18,4 +18,21 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/analogClock1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="这是科科的第一个页面，点我跳科科2页面，点时间跳袁平页面，点我跳科科2页面，"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
 </RelativeLayout>
